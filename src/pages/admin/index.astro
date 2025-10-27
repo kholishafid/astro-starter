@@ -1,0 +1,15 @@
+---
+import { ChartAreaInteractive } from "@/components/chart-area-interactive";
+import { SectionCards } from "@/components/section-cards";
+import Dashboard from "@/layouts/dashboard.astro";
+import data from "@/app/dashboard/data.json";
+import { DataTable } from "@/components/data-table";
+---
+
+<Dashboard content={{ title: "Astro Starter" }}>
+  <SectionCards />
+  <div class="px-4 lg:px-6">
+    <ChartAreaInteractive client:only="react" />
+  </div>
+  <DataTable client:only="react" data={data} />
+</Dashboard>
