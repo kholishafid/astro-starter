@@ -1,0 +1,12 @@
+---
+import { SignupForm } from "@/features/auth/signup-form";
+import AuthLayout from "@/layouts/auth.astro";
+---
+
+<AuthLayout content={{ title: "Astro Starter" }}>
+  <main class="flex min-h-screen flex-col items-center justify-center px-4">
+    <div class="w-full max-w-sm">
+      <SignupForm client:only />
+    </div>
+  </main>
+</AuthLayout>

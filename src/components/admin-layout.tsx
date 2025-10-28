@@ -3,6 +3,7 @@ import "@/styles/global.css";
 import { AppSidebar } from "@/components/app-sidebar";
 import { SiteHeader } from "@/components/site-header";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
+import { Toaster } from "./ui/sonner";
 
 export default function AdminLayout({
   children,
@@ -28,6 +29,7 @@ export default function AdminLayout({
             </div>
           </div>
         </div>
+        <Toaster position="bottom-center" />
       </SidebarInset>
     </SidebarProvider>
   );

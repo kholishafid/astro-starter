@@ -4,6 +4,8 @@ import { SectionCards } from "@/components/section-cards";
 import Dashboard from "@/layouts/dashboard.astro";
 import data from "@/app/dashboard/data.json";
 import { DataTable } from "@/components/data-table";
+
+export const prerender = false;
 ---
 
 <Dashboard content={{ title: "Astro Starter" }}>
