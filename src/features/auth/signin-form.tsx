@@ -18,11 +18,9 @@ import {
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { actions, isInputError } from "astro:actions";
-import { navigate } from "astro:transitions/client";
 import { Loader2 } from "lucide-react";
 import { useState, type FormEvent } from "react";
 import { authClient } from "@/lib/auth-client";
-import type { email } from "better-auth";
 
 export function SignInForm({
   className,
