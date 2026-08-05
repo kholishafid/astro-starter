@@ -16,8 +16,7 @@ import {
   FieldLabel,
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
-import { isInputError } from "astro/actions/runtime/shared.js";
-import { actions } from "astro:actions";
+import { actions, isInputError } from "astro:actions";
 import { navigate } from "astro:transitions/client";
 import { Loader2 } from "lucide-react";
 import { useState, type FormEvent } from "react";
